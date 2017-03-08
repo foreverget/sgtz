@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>图表测试</title>
+#parse("sys/header.html")
+</head>
+
+<body style="padding: 0">
+	<div id='do'>
+		<input type="button" class="btn btn-primary" @click="loadChar" value="生成图表"/>
+		&nbsp;&nbsp;
+		<input type="button" class="btn btn-primary" @click="save" value="保存为图片"/>
+		&nbsp;&nbsp;
+		<input type="button" class="btn btn-warning" @click="goBack" value="返回"/>
+	</div>
+	<hr style="height:10px;border:none;border-top:10px groove skyblue;" />
+	<div id="chart" style="height: 430px;"/>
+</body>
+<script type="text/javascript">
+var picInfo;
+</script>
+<script src="${rc.contextPath}/statics/libs/echarts-all.js?_${date.systemTime}"></script>
+<script src="${rc.contextPath}/js/sys/test.js?_${date.systemTime}"></script>
+</html>
